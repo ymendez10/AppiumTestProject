@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Appium Project Test Suite">
+	<test name="Amazon Tests">
+		<classes>
+			<class name="com.appium.project.test.SelendroidAppiumTest" />
+		</classes>
+	</test>
+</suite>
