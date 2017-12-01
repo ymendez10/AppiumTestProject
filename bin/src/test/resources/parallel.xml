@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" configfailurepolicy="continue"
+	verbose="0" name="Parallel tests" data-provider-thread-count="1">
+	<listeners>
+		<listener class-name="com.appium.project.listener.ExtentReporter" />
+		<listener class-name="com.appium.project.listener.TestResultListenerAdapter" />
+	</listeners>
+
+	<test name="Youtube Test Nexus 6" preserve-order="true">
+		<parameter name="port_" value="4723" />
+		<parameter name="videoTitle" value="ninja 400" />
+
+		<classes>
+			<class name="com.appium.project.test.YoutubeAppiumTest" />
+		</classes>
+	</test>
+	<test name="Youtube Test Nexus 5" preserve-order="true">
+		<parameter name="port_" value="4725" />
+		<parameter name="videoTitle" value="cbr250rr" />
+		
+		<classes>
+			<class name="com.appium.project.test.YoutubeAppiumTest" />
+		</classes>
+	</test>
+
+</suite>

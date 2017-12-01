@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" configfailurepolicy="continue" verbose="0" name="Failed suite [Parallel tests]" parallel="tests" data-provider-thread-count="1">
+  <parameter name="port_" value="4725"/>
+  <parameter name="videoTitle" value="cbr250rr"/>
+  <listeners>
+    <listener class-name="com.appium.project.listener.ExtentReporter"/>
+    <listener class-name="com.appium.project.listener.TestResultListenerAdapter"/>
+  </listeners>
+  <test name="Youtube Test Nexus 5(failed)" parallel="tests">
+    <parameter name="port_" value="4725"/>
+    <parameter name="videoTitle" value="cbr250rr"/>
+    <classes>
+      <class name="com.appium.project.test.YoutubeAppiumTest">
+        <methods>
+          <include name="testPlayVideo" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.appium.project.test.YoutubeAppiumTest -->
+    </classes>
+  </test> <!-- Youtube Test Nexus 5(failed) -->
+  <test name="Youtube Test Nexus 6(failed)" parallel="tests">
+    <parameter name="port_" value="4723"/>
+    <parameter name="videoTitle" value="ninja 400"/>
+    <classes>
+      <class name="com.appium.project.test.YoutubeAppiumTest">
+        <methods>
+          <include name="testPlayVideo" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.appium.project.test.YoutubeAppiumTest -->
+    </classes>
+  </test> <!-- Youtube Test Nexus 6(failed) -->
+</suite> <!-- Failed suite [Parallel tests] -->

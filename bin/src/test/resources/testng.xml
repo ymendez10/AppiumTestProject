@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Appium Project Test Suite">
+	<test name="Youtube Tests">
+	<parameter name="videoTitle" value="Ninja 400" />
+	<parameter name="numberOfVideo" value="3" />
+	
+		<classes>
+			<class name="com.appium.project.test.YoutubeAppiumTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parallel tests" duration-ms="37996" started-at="2017-11-27T21:12:15Z" finished-at="2017-11-27T21:12:53Z">
+    <groups>
+    </groups>
+    <test name="Youtube Test Nexus 5" duration-ms="36866" started-at="2017-11-27T21:12:15Z" finished-at="2017-11-27T21:12:52Z">
+      <class name="com.appium.project.test.YoutubeAppiumTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.appium.project.test.YoutubeAppiumTest@1e397ed7]" name="beforeMethod" is-config="true" duration-ms="16623" started-at="2017-11-27T15:12:15Z" finished-at="2017-11-27T15:12:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testPlayVideo(java.lang.String)[pri:0, instance:com.appium.project.test.YoutubeAppiumTest@1e397ed7]" name="testPlayVideo" duration-ms="19093" started-at="2017-11-27T15:12:32Z" finished-at="2017-11-27T15:12:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cbr250rr]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPlayVideo -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.appium.project.test.YoutubeAppiumTest@1e397ed7]" name="afterMethod" is-config="true" duration-ms="1139" started-at="2017-11-27T15:12:51Z" finished-at="2017-11-27T15:12:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.appium.project.test.YoutubeAppiumTest -->
+    </test> <!-- Youtube Test Nexus 5 -->
+    <test name="Youtube Test Nexus 6" duration-ms="37996" started-at="2017-11-27T21:12:15Z" finished-at="2017-11-27T21:12:53Z">
+      <class name="com.appium.project.test.YoutubeAppiumTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.appium.project.test.YoutubeAppiumTest@53b32d7]" name="beforeMethod" is-config="true" duration-ms="16686" started-at="2017-11-27T15:12:15Z" finished-at="2017-11-27T15:12:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testPlayVideo(java.lang.String)[pri:0, instance:com.appium.project.test.YoutubeAppiumTest@53b32d7]" name="testPlayVideo" duration-ms="20570" started-at="2017-11-27T15:12:32Z" finished-at="2017-11-27T15:12:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ninja 400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPlayVideo -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.appium.project.test.YoutubeAppiumTest@53b32d7]" name="afterMethod" is-config="true" duration-ms="730" started-at="2017-11-27T15:12:52Z" finished-at="2017-11-27T15:12:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.appium.project.test.YoutubeAppiumTest -->
+    </test> <!-- Youtube Test Nexus 6 -->
+  </suite> <!-- Parallel tests -->
+</testng-results>
