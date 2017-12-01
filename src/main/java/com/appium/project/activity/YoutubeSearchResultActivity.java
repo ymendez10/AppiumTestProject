@@ -34,13 +34,21 @@ public class YoutubeSearchResultActivity extends BaseActivity{
 		return titles;
 	}
 	
-	public YoutubeVideoViewerActivity selectVideo(int startX, int startY, int endX, int endY, int numberOfVideo) {
+	public YoutubeVideoViewerActivity selectVideo() {
+		getWait().until(ExpectedConditions.visibilityOfAllElements(elements));
+		//choose first video
+		elements.get(0).click();
+		
+		return new YoutubeVideoViewerActivity(getDriver());
+		
+	}
+	public YoutubeVideoViewerActivity selectVideo(int startX, int startY, int endX, int endY) {
 		getWait().until(ExpectedConditions.visibilityOfAllElements(elements));
 		TouchAction touchAction = new TouchAction(getDriver()).press(startX, startY).moveTo(endX, endY).release();
 		getDriver().performTouchAction(touchAction);
 
-		//choose video
-		elements.get(numberOfVideo-1).click();
+		//choose random video
+		elements.get(2).click();
 		
 		return new YoutubeVideoViewerActivity(getDriver());
 		

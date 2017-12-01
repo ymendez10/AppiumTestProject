@@ -1,6 +1,7 @@
 package com.appium.project.activity;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Reporter;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -18,6 +19,9 @@ public class YoutubeHomeActivity extends BaseActivity{
 	public YoutubeSearchActivity clickSearchButton() {
 		getWait().until(ExpectedConditions.visibilityOf(searchButton));
 		searchButton.click();
+		
+		Reporter.log("Clicking on Search Button...");
+		
 		return new YoutubeSearchActivity(getDriver());
 	}
 }

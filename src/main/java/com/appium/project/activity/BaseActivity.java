@@ -18,7 +18,7 @@ public abstract class BaseActivity {
 	
 	public BaseActivity(AppiumDriver<AndroidElement> driver) {
 		 PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-		 wait = new WebDriverWait(driver, 10);
+		 wait = new WebDriverWait(driver, 20);
 		 this.driver=driver;
 		
 	}
